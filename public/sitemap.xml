@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://vingrelivillage.com/</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://vingrelivillage.com/Homepage.jpg</image:loc>
+      <image:title>Vingreli Village Resort - Main View</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://vingrelivillage.com/rooms</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://vingrelivillage.com/rooms-preview.jpg</image:loc>
+      <image:title>Luxury Rooms at Vingreli Village Resort</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://vingrelivillage.com/facilities</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://vingrelivillage.com/facilities-preview.jpg</image:loc>
+      <image:title>Resort Facilities and Amenities</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://vingrelivillage.com/contact</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

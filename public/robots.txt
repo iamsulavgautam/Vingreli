@@ -1,0 +1,25 @@
+# Vingreli Village Resort robots.txt
+# Main directives for all robots
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /*?* # Block query parameters
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.ico
+
+# Google-specific directives
+User-agent: Googlebot
+Crawl-delay: 1
+
+# Bing-specific directives
+User-agent: Bingbot
+Crawl-delay: 1
+
+# Site map location
+Sitemap: https://vingrelivillage.com/sitemap.xml

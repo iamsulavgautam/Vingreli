@@ -1,0 +1,3 @@
+/* /index.html 200
+/api/* https://crdkoqsmgpadjgmoqbnr.supabase.co/:splat 200
+/storage/* https://crdkoqsmgpadjgmoqbnr.supabase.co/storage/v1/object/public/:splat 200

@@ -1,0 +1,49 @@
+/* Import fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* Tailwind directives after imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Page transition animations */
+  .page-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .page-exit {
+    opacity: 1;
+  }
+
+  .page-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 300ms, transform 300ms;
+  }
+}

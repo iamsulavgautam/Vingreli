@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Build output (if any)
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE folders
+.vscode/
+.idea/
+
+# Supabase generated files (optional, if auto-generated)
+supabase/.temp/
+supabase/migrations/
+
+# Vite cache
+.vite/
+
+# Tailwind JIT cache
+.tailwind/
+
+# Others
+*.log
