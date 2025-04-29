@@ -132,7 +132,7 @@ function Home() {
                   Party Palace
                 </h2>
                 <p className="text-gray-600 mb-8">
-                Our grand Party Palace blends traditional elegance with modern features, offering customizable décor, gourmet catering, and seamless service. Celebrate every occasion in a setting crafted for unforgettable memories.
+                  Our grand Party Palace blends traditional elegance with modern features, offering customizable décor, gourmet catering, and seamless service. Celebrate every occasion in a setting crafted for unforgettable memories.
                 </p>
                 <ul className="space-y-4 mb-8">
                   {[
@@ -160,6 +160,10 @@ function Home() {
                   className="rounded-2xl shadow-2xl"
                   alt="Luxury Villa"
                 />
+                <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-emerald-800 to-emerald-600 text-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                  <p className="font-serif text-xl font-bold">Book Now</p>
+                  <p className="text-emerald-100">Unforgettable Memories</p>
+                </div>
               </div>
             </div>
           </div>
