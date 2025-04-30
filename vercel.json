@@ -27,7 +27,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.cloudflare.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: *.cloudflare.com *.imgbb.com; font-src 'self' fonts.gstatic.com; connect-src 'self' *.supabase.co; frame-ancestors 'none';"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.cloudflare.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: *.cloudflare.com *.imgbb.com i.ibb.co; font-src 'self' fonts.gstatic.com; connect-src 'self' *.supabase.co; frame-ancestors 'none';"
         },
         {
           "key": "Strict-Transport-Security",
