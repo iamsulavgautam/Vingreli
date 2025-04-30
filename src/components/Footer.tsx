@@ -47,7 +47,7 @@ function Footer() {
               </li>
               <li>
                 <Link to="/facilities" className="hover:text-white transition">
-                  Facilities
+                  Services
                 </Link>
               </li>
               <li>

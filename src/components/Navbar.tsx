@@ -149,7 +149,7 @@ function Navbar() {
                   <motion.div className="space-y-4">
                     {[
                       { path: '/', label: 'Home', icon: '🏠' },
-                      { path: '/facilities', label: 'Facilities', icon: '🏨' },
+                      { path: '/facilities', label: 'Services', icon: '🏨' },
                       { path: '/rooms', label: 'Rooms', icon: '🛏️' },
                       { path: '/contact', label: 'Contact Us', icon: '📞' }
                     ].map((item) => (

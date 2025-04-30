@@ -63,7 +63,7 @@ function Rooms() {
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-white px-4 py-2 rounded-full shadow-lg">
-                  <span className="text-lg font-bold text-emerald-600">रु {room.price}</span>
+                  <span className="text-lg font-semibold text-emerald-600">रु {room.price}/night</span>
                 </div>
               </div>
               <div className="p-6">
