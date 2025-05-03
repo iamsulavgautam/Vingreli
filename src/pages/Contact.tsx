@@ -1,51 +1,7 @@
 "use client";
-import { useState } from "react";
 import { Phone, Mail, MapPin, PhoneCall } from "lucide-react";
 
-// ✅ Read Web3Forms key from env at the top
-const formKey = "4e21afdd-2744-471d-a213-27cf17cf8792";
-
 function Contact() {
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-
-    const form = e.currentTarget;
-    const formData = {
-      access_key: formKey, // ✅ using the env key here
-      name: (form.elements.namedItem("name") as HTMLInputElement)?.value,
-      email: (form.elements.namedItem("email") as HTMLInputElement)?.value,
-      message: (form.elements.namedItem("message") as HTMLTextAreaElement)
-        ?.value,
-    };
-
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-      if (result.success) {
-        alert("✅ Message sent successfully!");
-        form.reset();
-      } else {
-        alert("❌ Submission failed.");
-      }
-    } catch (error) {
-      console.error(
-        "❌ Something went wrong while submitting the form:",
-        error
-      );
-      alert("❌ Something went wrong.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <div className="pt-20">
       {/* Hero Section */}
@@ -75,7 +31,17 @@ function Contact() {
             <h2 className="text-3xl font-serif text-emerald-900 mb-8">
               Send us a message
             </h2>
-            <form onSubmit={handleSubmit}>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              className="space-y-6"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="4e21afdd-2744-471d-a213-27cf17cf8792"
+              />
+
               <div>
                 <label className="block text-gray-700 mb-2">Name</label>
                 <input
@@ -105,12 +71,20 @@ function Contact() {
                   placeholder="Your message"
                 ></textarea>
               </div>
+
+              {/* Honeypot Spam Protection */}
+              <input
+                type="checkbox"
+                name="botcheck"
+                className="hidden"
+                style={{ display: "none" }}
+              />
+
               <button
                 type="submit"
-                className="bg-emerald-700 text-white px-8 py-3 rounded-lg hover:bg-emerald-800 transition disabled:opacity-50"
-                disabled={loading}
+                className="bg-emerald-700 text-white px-8 py-3 rounded-lg hover:bg-emerald-800 transition"
               >
-                {loading ? "Sending..." : "Send Message"}
+                Submit Form
               </button>
             </form>
           </div>
