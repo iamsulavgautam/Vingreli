@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Phone, Mail, MapPin, PhoneCall } from "lucide-react";
 
 // ✅ Read Web3Forms key from env at the top
-const formKey = import.meta.env.VITE_FORM_KEY || "";
+const formKey = "4e21afdd-2744-471d-a213-27cf17cf8792";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
