@@ -71,7 +71,7 @@ function Navbar() {
             />
             <div className="ml-3">
               <h1 className={`text-xl font-serif ${isScrolled ? 'text-emerald-900' : 'text-white'}`}>
-                Vingreli Village Resort<br />
+                Vingreli Resort<br />
                 <span className="text-sm font-light"></span>
               </h1>
             </div>
