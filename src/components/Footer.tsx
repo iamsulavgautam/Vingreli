@@ -122,9 +122,9 @@ function Footer() {
           © {currentYear} Vingreli Village Resort. All rights reserved.
           <div>
             Made with ❤️ by{" "}
-            <a href="https://virza.tech" target="_blank" className="font-bold">
+            <a href="#" target="_blank" className="font-bold">
               <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-[length:200%_200%] bg-clip-text text-transparent animate-[gradientMove_3s_infinite_linear]">
-                Virza
+              Global A To Z Consultant PVT. LTD.
               </span>
             </a>
           </div>
